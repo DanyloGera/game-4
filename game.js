@@ -39,7 +39,7 @@ function addItems() {
 function addPlatforms() {
   platforms = game.add.physicsGroup();
 
-  // platforms.create(0, 554, 'platform1');
+  platforms.create(0, 565, 'platform1');
   // platforms.create(0, 289, 'platform2');
   // //stairs
   // platforms.create(615, 518, 'step1');
