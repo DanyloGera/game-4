@@ -45,6 +45,7 @@ function addPlatforms() {
   platforms.create(747, 455, 'box');
   platforms.create(747, 400, 'box');
   platforms.create(692, 510, 'box');
+  platforms.create(455, 309, 'box');
   // //stairs
   // platforms.create(615, 518, 'step1');
   // platforms.create(645, 482, 'step2');
@@ -112,6 +113,7 @@ window.onload = function () {
     //Load images
     game.load.image('platform1', 'platform.png');
     game.load.image('box', 'box2.png');
+    game.load.image('box2', 'box5.png');
     //stairs
     game.load.image('step1', 'stairs2/step1.png');
     game.load.image('step2', 'stairs2/step2.png');
