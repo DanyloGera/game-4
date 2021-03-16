@@ -40,7 +40,7 @@ function addPlatforms() {
   platforms = game.add.physicsGroup();
 
   platforms.create(0, 565, 'platform1');
-  // platforms.create(0, 289, 'platform2');
+  platforms.create(744, 504, 'box');
   // //stairs
   // platforms.create(615, 518, 'step1');
   // platforms.create(645, 482, 'step2');
@@ -107,7 +107,7 @@ window.onload = function () {
 
     //Load images
     game.load.image('platform1', 'platform.png');
-    game.load.image('platform2', 'platform2.png');
+    game.load.image('box', 'box2.png');
     //stairs
     game.load.image('step1', 'stairs2/step1.png');
     game.load.image('step2', 'stairs2/step2.png');
