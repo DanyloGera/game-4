@@ -47,7 +47,7 @@ function addPlatforms() {
   platforms.create(747, 400, 'box');
   platforms.create(692, 510, 'box');
   platforms.create(455, 309, 'box2');
-  platforms.create(357, 220, 'box3');
+  platforms.create(357, 215, 'box3');
   // //stairs
   // platforms.create(615, 518, 'step1');
   // platforms.create(645, 482, 'step2');
