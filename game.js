@@ -83,8 +83,8 @@ function itemHandler(player, item) {
    if (item.key === 'coin1') {
      currentScore = currentScore - 45;
      game.add.sprite(20, 467, 'openbox');
-  }else if (item.key === 'coin2') {
-     currentScore = currentScore - 45;
+  }else if (item.key === 'letter') {
+     currentScore = currentScore + 30;
      game.add.sprite(480, 510, 'butterbasket');
   } else if (item.key === 'coin3') {
      currentScore = currentScore - 45;
