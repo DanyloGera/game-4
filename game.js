@@ -166,7 +166,6 @@ window.onload = function () {
   function create() {
     // alert("Прочитайте завдання, закрийте його на хрестик і грайте!");
     timer1();
-    game.add.sprite(this, 500, 500, 'platform1', {	isStatic: true	})
     this.add.image(0, 0, 'background');
     // game.add.sprite(266, 467, 'grandma');
     // game.add.sprite(470, 467, 'grandpa');
