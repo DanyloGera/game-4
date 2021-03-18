@@ -15,7 +15,7 @@ var winningScore = 180;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
-  // createItem(280, 510, 'coin1');
+  createItem(87, 445, 'coin1');
   // createItem(485, 510, 'coin2');
   //
   // createItem(180, 250, 'coin3');
@@ -119,26 +119,20 @@ window.onload = function () {
     game.load.image('box', 'box2.png');
     game.load.image('box2', 'box5.png');
     game.load.image('box3', 'box6.png');
-    //stairs
-    game.load.image('step1', 'stairs2/step1.png');
-    game.load.image('step2', 'stairs2/step2.png');
-    game.load.image('step3', 'stairs2/step3.png');
-    game.load.image('step4', 'stairs2/step4.png');
-    game.load.image('step5', 'stairs2/step5.png');
-    game.load.image('step6', 'stairs2/step6.png');
+
 
 
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png',  48, 62 );
+    game.load.spritesheet('coin1', 'coin.png', 36, 44);
+
     game.load.spritesheet('grandma', 'grandma.png', { frameWidth: 60, frameHeight: 75 });
     game.load.spritesheet('grandpa', 'grandpa.png', { frameWidth: 60, frameHeight: 75 });
     game.load.spritesheet('grandma2', 'grandma2.png', { frameWidth: 60, frameHeight: 75 });
     game.load.spritesheet('grandpa2', 'grandpa2.png', { frameWidth: 60, frameHeight: 75 });
 
-    game.load.spritesheet('coin1', 'coin.png', 36, 44);
-    game.load.spritesheet('coin2', 'coin.png', 36, 44);
-    game.load.spritesheet('coin3', 'coin.png', 36, 44);
-    game.load.spritesheet('coin4', 'coin.png', 36, 44);
+
+
 
 
     game.load.spritesheet('fruitbasket', 'fruitbasket.png', { frameWidth: 40, frameHeight: 40 });
