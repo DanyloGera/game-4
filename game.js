@@ -16,7 +16,7 @@ var winningScore = 180;
 function addItems() {
   items = game.add.physicsGroup();
   createItem(87, 445, 'coin1');
-  createItem(87, 445, 'openbox');
+  // createItem(87, 445, 'openbox');
   //
   // createItem(180, 250, 'coin3');
   // createItem(385, 250, 'coin4');
