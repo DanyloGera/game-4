@@ -16,7 +16,7 @@ var winningScore = 180;
 function addItems() {
   items = game.add.physicsGroup();
   createItem(87, 445, 'coin1');
-  // createItem(485, 510, 'coin2');
+  createItem(87, 445, 'openbox');
   //
   // createItem(180, 250, 'coin3');
   // createItem(385, 250, 'coin4');
@@ -82,7 +82,7 @@ function itemHandler(player, item) {
   item.kill();
    if (item.key === 'coin1') {
      currentScore = currentScore - 45;
-     game.add.sprite(275, 510, 'fruitbasket');
+     game.add.sprite(87, 445, 'openbox');
   }else if (item.key === 'coin2') {
      currentScore = currentScore - 45;
      game.add.sprite(480, 510, 'butterbasket');
@@ -125,8 +125,8 @@ window.onload = function () {
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png',  48, 62 );
     game.load.spritesheet('coin1', 'coin.png', 36, 44);
+    game.load.spritesheet('openbox', 'box3.png', { frameWidth: 50, frameHeight: 50 });
 
-    game.load.spritesheet('grandma', 'grandma.png', { frameWidth: 60, frameHeight: 75 });
     game.load.spritesheet('grandpa', 'grandpa.png', { frameWidth: 60, frameHeight: 75 });
     game.load.spritesheet('grandma2', 'grandma2.png', { frameWidth: 60, frameHeight: 75 });
     game.load.spritesheet('grandpa2', 'grandpa2.png', { frameWidth: 60, frameHeight: 75 });
