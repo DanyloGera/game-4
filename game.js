@@ -179,12 +179,12 @@ function  moveHorizontally()
   		}
   	})
   }
-  import MovingPlatform from './platform.png'
+
   // initial game set up
   function create() {
     // alert("Прочитайте завдання, закрийте його на хрестик і грайте!");
     timer1();
-    this.platform.add MovingPlatform(this, 500, 500, 'platform1', {
+    this.add.platform(this, 500, 500, 'platform1', {
 		isStatic: true
 	});
 	this.platform.moveVertically();
