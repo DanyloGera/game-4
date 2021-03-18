@@ -162,7 +162,7 @@ window.onload = function () {
   }
   setInterval(timer1, 1000);
 //
-  moveHorizontally()
+function  moveHorizontally()
   {
   	this.scene.tweens.addCounter({
   		from: 0,
