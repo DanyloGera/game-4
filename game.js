@@ -72,7 +72,7 @@ function createItem(left, top, image) {
 // create the winning badge and add to screen
 function createBadge() {
   badges = game.add.physicsGroup();
-  var badge = badges.create(20, 467, 'badge');
+  var badge = badges.create(88, 457, 'badge');
   badge.animations.add('spin');
   badge.animations.play('spin', 10, true);
 }
@@ -82,7 +82,7 @@ function itemHandler(player, item) {
   item.kill();
    if (item.key === 'coin1') {
      currentScore = currentScore - 45;
-     game.add.sprite(87, 445, 'openbox');
+     game.add.sprite(20, 467, 'openbox');
   }else if (item.key === 'coin2') {
      currentScore = currentScore - 45;
      game.add.sprite(480, 510, 'butterbasket');
