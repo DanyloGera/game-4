@@ -184,7 +184,7 @@ function  moveHorizontally()
   function create() {
     // alert("Прочитайте завдання, закрийте його на хрестик і грайте!");
     timer1();
-    this.add.platform(this, 500, 500, 'platform1', {
+    this.platform.add = (this, 500, 500, 'platform1', {
 		isStatic: true
 	});
 	this.platform.moveVertically();
