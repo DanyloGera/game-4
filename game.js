@@ -177,7 +177,7 @@ window.onload = function () {
     // game.add.sprite(480, 510, 'butterbasket');
     // game.add.sprite(180, 250, 'giftbasket');
     // game.add.sprite(385, 250, 'meatbasket');
-    player = game.add.sprite(95, 457, 'player');
+    player = game.add.sprite(110, 457, 'player');
     player.animations.add('walk');
     player.anchor.setTo(0.5, 1);
     game.physics.arcade.enable(player);
