@@ -179,6 +179,7 @@ function  moveHorizontally()
   		}
   	})
   }
+  import MovingPlatform from './platform.png'
   // initial game set up
   function create() {
     // alert("Прочитайте завдання, закрийте його на хрестик і грайте!");
