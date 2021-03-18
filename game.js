@@ -15,7 +15,7 @@ var winningScore = 180;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
-  createItem(87, 445, 'coin1');
+  createItem(20, 467, 'coin1');
   // createItem(87, 445, 'openbox');
   //
   // createItem(180, 250, 'coin3');
@@ -72,7 +72,7 @@ function createItem(left, top, image) {
 // create the winning badge and add to screen
 function createBadge() {
   badges = game.add.physicsGroup();
-  var badge = badges.create(88, 457, 'badge');
+  var badge = badges.create(20, 467, 'badge');
   badge.animations.add('spin');
   badge.animations.play('spin', 10, true);
 }
