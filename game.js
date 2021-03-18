@@ -161,33 +161,12 @@ window.onload = function () {
        timer.value = m + " : " + s;
   }
   setInterval(timer1, 1000);
-//
-function  moveHorizontally()
-  {
-  	this.scene.tweens.addCounter({
-  		from: 0,
-  		to: -300,
-  		duration: 1500,
-  		ease: Phaser.Math.Easing.Sine.InOut,
-  		repeat: -1,
-  		yoyo: true,
-  		onUpdate: (tween, target) => {
-  			const x = this.startX + target.value
-  			const dx = x - this.x
-  			this.x = x
-  			this.setVelocityX(dx)
-  		}
-  	})
-  }
+
 
   // initial game set up
   function create() {
     // alert("Прочитайте завдання, закрийте його на хрестик і грайте!");
     timer1();
-    this.platform.add = (this, 500, 500, 'platform1', {
-		isStatic: true
-	});
-	this.platform.moveVertically();
     this.add.image(0, 0, 'background');
     // game.add.sprite(266, 467, 'grandma');
     // game.add.sprite(470, 467, 'grandpa');
