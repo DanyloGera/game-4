@@ -83,7 +83,6 @@ function createBadge() {
 function itemHandler(player, item) {
   item.kill();
    if (item.key === 'coin1') {
-     currentScore = currentScore - 45;
      game.add.sprite(20, 467, 'openbox');
   }else if (item.key === 'letter') {
      currentScore = currentScore + 30;
