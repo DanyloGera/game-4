@@ -17,8 +17,8 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(20, 467, 'coin1');
   createItem(464, 520, 'letter');
-  createItem(514, 520, 'letter');
-  createItem(564, 520, 'letter');
+  createItem(534, 520, 'letter');
+  createItem(604, 520, 'letter');
   //
   // createItem(180, 250, 'coin3');
   // createItem(385, 250, 'coin4');
@@ -87,7 +87,6 @@ function itemHandler(player, item) {
      game.add.sprite(20, 467, 'openbox');
   }else if (item.key === 'letter') {
      currentScore = currentScore + 30;
-     game.add.sprite(480, 510, 'butterbasket');
   } else if (item.key === 'coin3') {
      currentScore = currentScore - 45;
      game.add.sprite(180, 250, 'giftbasket');
