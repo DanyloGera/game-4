@@ -65,7 +65,7 @@ function createItem(left, top, image) {
 // create the winning badge and add to screen
 function createBadge() {
   badges = game.add.physicsGroup();
-  var badge = badges.create(88, 457, 'badge');
+  var badge = badges.create(88, 457, 'coin1');
   badge.animations.add('spin');
   badge.animations.play('spin', 10, true);
 }
@@ -93,7 +93,7 @@ function itemHandler(player, item) {
 // when the player collects the badge at the end of the game
 function badgeHandler(player, badge) {
   badge.kill();
-  won = true;
+
 }
 
 // setup game when the web page loads
