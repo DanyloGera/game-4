@@ -18,7 +18,7 @@ function addItems() {
   createItem(20, 467, 'coin1');
   createItem(464, 520, 'letter');
   createItem(534, 520, 'letter');
-  createItem(604, 520, 'letter');
+  createItem(604, 520, 'green');
   createItem(760, 350, 'letter');
   createItem(550, 50, 'letter');
   createItem(600, 50, 'letter');
