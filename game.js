@@ -20,7 +20,7 @@ function addItems() {
   createItem(534, 520, 'letter');
   createItem(604, 520, 'letter');
   createItem(760, 350, 'letter');
-  createItem(550, 50, 'violet');
+  createItem(550, 50, 'letter');
   createItem(600, 50, 'letter');
   createItem(240, 50, 'letter');
   createItem(290, 50, 'letter');
@@ -137,6 +137,7 @@ window.onload = function () {
     game.load.spritesheet('green', 'envelope/green.png', 36, 44);
     game.load.spritesheet('red', 'envelope/red.png', 36, 44);
     game.load.spritesheet('violet', 'envelope/violet.png', 36, 44);
+    game.load.spritesheet('orange', 'envelope/orange.png', 36, 44);
 
 
 
