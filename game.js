@@ -10,6 +10,7 @@ var text;
 var winningMessage;
 var won = false;
 var currentScore = 0;
+var middleScore = 240;
 var winningScore = 480;
 
 // add collectable items to the game
@@ -38,6 +39,7 @@ function addletters() {
   createItem(290, 50, 'yellow');
 }
 
+
 // add platforms to the game
 function addPlatforms() {
   platforms = game.add.physicsGroup();
@@ -52,15 +54,6 @@ function addPlatforms() {
   platforms.create(692, 510, 'box');
   platforms.create(455, 309, 'box2');
   platforms.create(357, 215, 'box3');
-  // //stairs
-  // platforms.create(615, 518, 'step1');
-  // platforms.create(645, 482, 'step2');
-  // platforms.create(673, 446, 'step3');
-  // platforms.create(698, 410, 'step4');
-  // platforms.create(723, 374, 'step5');
-  // platforms.create(756, 338, 'step6');
-
-
   platforms.setAll('body.immovable', true);
 }
 
@@ -94,6 +87,9 @@ function itemHandler(player, item) {
   }else if (item.key === 'coin4') {
      currentScore = currentScore - 45;
      game.add.sprite(385, 250, 'meatbasket');
+  }
+  if (currentScore === middleScore) {
+      createBadge();
   }
   if (currentScore === winningScore) {
       createBadge();
