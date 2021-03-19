@@ -134,7 +134,7 @@ window.onload = function () {
     game.load.spritesheet('letter', 'envelope/letter1.png', 36, 44);
     game.load.spritesheet('blue', 'envelope/blue.png', 36, 44);
     game.load.spritesheet('yellow', 'envelope/yellow.png', 36, 44);
-    game.load.spritesheet('yellow', 'envelope/green.png', 36, 44);
+    game.load.spritesheet('green', 'envelope/green.png', 36, 44);
 
 
 
