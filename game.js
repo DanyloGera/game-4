@@ -17,7 +17,7 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(20, 467, 'coin1');
   createItem(464, 520, 'letter');
-  createItem(534, 520, 'yellow');
+  createItem(534, 520, 'letter');
   createItem(604, 520, 'letter');
   createItem(760, 350, 'letter');
   createItem(550, 50, 'letter');
