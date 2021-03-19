@@ -19,7 +19,7 @@ function addItems() {
   createItem(464, 520, 'letter');
   createItem(534, 520, 'letter');
   createItem(604, 520, 'letter');
-  createItem(747, 350, 'letter');
+  createItem(760, 350, 'letter');
   //
   // createItem(180, 250, 'coin3');
   // createItem(385, 250, 'coin4');
