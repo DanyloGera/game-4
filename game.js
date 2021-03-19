@@ -17,15 +17,10 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(20, 467, 'coin1');
   createItem(464, 520, 'blue');
-
-
-
-
-
-  createItem(534, 520, 'yellow');
+  createItem(534, 520, 'violet');
   createItem(604, 520, 'green');
   createItem(760, 350, 'red');
-  createItem(550, 50, 'violet');
+  createItem(550, 50, 'yellow');
   createItem(600, 50, 'orange');
   createItem(240, 50, 'letter');
   createItem(290, 50, 'letter');
