@@ -17,7 +17,7 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(20, 467, 'coin1');
   createItem(464, 520, 'letter');
-  createItem(534, 520, 'letter');
+  createItem(534, 520, 'yellow');
   createItem(604, 520, 'letter');
   createItem(760, 350, 'letter');
   createItem(550, 50, 'letter');
@@ -133,6 +133,7 @@ window.onload = function () {
     game.load.spritesheet('openbox', 'box3.png', { frameWidth: 50, frameHeight: 50 });
     game.load.spritesheet('letter', 'envelope/letter1.png', 36, 44);
     game.load.spritesheet('blue', 'envelope/blue.png', 36, 44);
+    game.load.spritesheet('yellow', 'envelope/yellow.png', 36, 44);
 
 
 
