@@ -16,6 +16,18 @@ var winningScore = 300;
 function addItems() {
   items = game.add.physicsGroup();
   createItem(20, 467, 'coin1');
+  createItem(464, 520, 'letter');
+  createItem(534, 520, 'letter');
+  createItem(604, 520, 'letter');
+  createItem(760, 350, 'letter');
+  createItem(550, 50, 'letter');
+  createItem(600, 50, 'letter');
+  createItem(240, 50, 'letter');
+  createItem(290, 50, 'letter');
+}
+
+function addletters() {
+  items = game.add.physicsGroup();
   createItem(464, 520, 'blue');
   createItem(534, 520, 'violet');
   createItem(604, 520, 'green');
@@ -24,22 +36,6 @@ function addItems() {
   createItem(600, 50, 'orange');
   createItem(240, 50, 'orange');
   createItem(290, 50, 'yellow');
-  //
-  // createItem(180, 250, 'coin3');
-  // createItem(385, 250, 'coin4');
-  // createItem(745, 510, '2021');
-  //
-  // createItem(520, 435, 'birth');
-  // createItem(590, 435, 'info');
-  // createItem(660, 435, 'goodproject');
-  // createItem(730, 435, 'news');
-  //
-  // createItem(120, 360, 'alone');
-  // createItem(270, 310, 'dryer');
-  // createItem(340, 310, 'gadget');
-  // createItem(410, 310, 'money');
-  // createItem(480, 310, 'new');
-
 }
 
 // add platforms to the game
@@ -89,6 +85,7 @@ function itemHandler(player, item) {
   item.kill();
    if (item.key === 'coin1') {
      game.add.sprite(20, 467, 'openbox');
+     addletters();
   }else if (item.key === 'letter') {
      currentScore = currentScore + 30;
   } else if (item.key === 'coin3') {
