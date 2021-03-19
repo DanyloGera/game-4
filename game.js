@@ -22,8 +22,8 @@ function addItems() {
   createItem(760, 350, 'red');
   createItem(550, 50, 'yellow');
   createItem(600, 50, 'orange');
-  createItem(240, 50, 'letter');
-  createItem(290, 50, 'letter');
+  createItem(240, 50, 'orange');
+  createItem(290, 50, 'yellow');
   //
   // createItem(180, 250, 'coin3');
   // createItem(385, 250, 'coin4');
