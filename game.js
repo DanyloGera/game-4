@@ -10,11 +10,12 @@ var text;
 var winningMessage;
 var won = false;
 var currentScore = 0;
-var winningScore = 240;
+var winningScore = 480;
 
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
+  createItem(20, 467, 'coin1');
   createItem(464, 520, 'letter');
   createItem(534, 520, 'letter');
   createItem(604, 520, 'letter');
@@ -24,6 +25,12 @@ function addItems() {
   createItem(240, 50, 'letter');
   createItem(290, 50, 'letter');
 }
+
+function addMiddleItem() {
+  items = game.add.physicsGroup();
+  createItem(20, 467, 'coin1');
+}
+
 
 function addletters() {
   items = game.add.physicsGroup();
@@ -65,7 +72,7 @@ function createItem(left, top, image) {
 // create the winning badge and add to screen
 function createBadge() {
   badges = game.add.physicsGroup();
-  var badge = badges.create(88, 457, 'coin1');
+  var badge = badges.create(88, 457, 'badge');
   badge.animations.add('spin');
   badge.animations.play('spin', 10, true);
 }
@@ -86,14 +93,14 @@ function itemHandler(player, item) {
      game.add.sprite(385, 250, 'meatbasket');
   }
   if (currentScore === winningScore) {
-      createBadge();
+      addMiddleItem();
   }
 }
 
 // when the player collects the badge at the end of the game
 function badgeHandler(player, badge) {
   badge.kill();
-
+  won = true;
 }
 
 // setup game when the web page loads
