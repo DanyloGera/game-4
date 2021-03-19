@@ -20,6 +20,10 @@ function addItems() {
   createItem(534, 520, 'letter');
   createItem(604, 520, 'letter');
   createItem(760, 350, 'letter');
+  createItem(550, 50, 'letter');
+  createItem(600, 50, 'letter');
+  createItem(240, 50, 'letter');
+  createItem(290, 50, 'letter');
   //
   // createItem(180, 250, 'coin3');
   // createItem(385, 250, 'coin4');
