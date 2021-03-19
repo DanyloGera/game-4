@@ -10,7 +10,7 @@ var text;
 var winningMessage;
 var won = false;
 var currentScore = 0;
-var winningScore = 300;
+var winningScore = 480;
 
 // add collectable items to the game
 function addItems() {
@@ -88,8 +88,8 @@ function itemHandler(player, item) {
      addletters();
   }else if (item.key === 'letter') {
      currentScore = currentScore + 30;
-  } else if (item.key === 'coin3') {
-     currentScore = currentScore - 45;
+  } else if (item.key === 'letter') {
+     currentScore = currentScore + 30;
      game.add.sprite(180, 250, 'giftbasket');
   }else if (item.key === 'coin4') {
      currentScore = currentScore - 45;
