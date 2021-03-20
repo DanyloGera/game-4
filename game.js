@@ -86,6 +86,7 @@ function itemHandler(player, item) {
   if (currentScore === winningScore) {
     items = game.add.physicsGroup();
     createItem(20, 467, 'coin1');
+    createBadge();
   }
 }
 
