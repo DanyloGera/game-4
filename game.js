@@ -79,10 +79,7 @@ function itemHandler(player, item) {
      game.add.sprite(20, 467, 'openbox');
      addletters();
   }else if (item.key === 'letter') {
-     currentScore = currentScore + 30;
-  } else if (item.key === 'letter') {
-     currentScore = currentScore + 30;
-     game.add.sprite(180, 250, 'giftbasket');
+     currentScore = currentScore + 10;
   }else if (item.key === 'coin4') {
      currentScore = currentScore - 45;
      game.add.sprite(385, 250, 'meatbasket');
