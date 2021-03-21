@@ -40,7 +40,7 @@ function addletters() {
   createItem(760, 350, 'red');
   createItem(550, 50, 'yellow');
   createItem(600, 50, 'orange');
-  createItem(240, 50, 'orange');
+  createItem(245, 50, 'orange');
   createItem(290, 50, 'yellow');
 }
 
@@ -61,7 +61,11 @@ function addPlatforms() {
 
   platforms.setAll('body.immovable', true);
 }
-
+  function addExtraPlatforms() {
+    platforms = game.add.physicsGroup();
+      platforms.create(601, 268, 'box4');
+    platforms.setAll('body.immovable', true);
+  }
 
 // create a single animated item and add to screen
 function createItem(left, top, image) {
@@ -86,8 +90,9 @@ function itemHandler(player, item) {
 
   }else if (item.key === 'letter') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'blue') {
+  }else if (item.key === 'orange') {
      currentScore = currentScore + 10;
+     addExtraPlatforms();
   }
   if (currentScore === winningScore) {
       createBadge();
@@ -115,6 +120,7 @@ window.onload = function () {
     game.load.image('box', 'box2.png');
     game.load.image('box2', 'box5.png');
     game.load.image('box3', 'box6.png');
+    game.load.image('box4', 'box7.png');
 
 
 
