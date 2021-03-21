@@ -156,9 +156,6 @@ window.onload = function () {
 
   // initial game set up
   function create() {
-    var block = this.add.image(100, 500, 'box2')
- .setVelocity(100, -100);
- block.body.setAllowGravity(false);
     // alert("Прочитайте завдання, закрийте його на хрестик і грайте!");
     timer1();
     this.add.image(0, 0, 'background');
