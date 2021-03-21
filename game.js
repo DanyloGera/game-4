@@ -51,11 +51,10 @@ function addPlatforms() {
   platforms.create(538, 103, 'platform2');
   platforms.create(220, 103, 'platform2');
   //
-  var platform = platforms.create(747, 510, 'box');
+  platforms.create(747, 510, 'box');
   platforms.create(747, 455, 'box');
   platforms.create(747, 400, 'box');
   platforms.create(692, 510, 'box');
-
   platforms.create(455, 309, 'box2');
   platforms.create(357, 215, 'box3');
 
@@ -68,6 +67,9 @@ function createItem(left, top, image) {
   var item = items.create(left, top, image);
   item.animations.add('spin');
   item.animations.play('spin', 10, true);
+}
+function createPlatforms(left, top, image) {
+  var platform = platforms.create(left, top, image);
 }
 
 // create the winning badge and add to screen
