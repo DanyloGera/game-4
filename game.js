@@ -24,6 +24,7 @@ function addItems() {
   createItem(600, 50, 'letter');
   createItem(240, 50, 'letter');
   createItem(290, 50, 'letter');
+  createItem(455, 250, 'letter');
 }
 
 function addItemBox() {
