@@ -27,22 +27,9 @@ function addItems() {
   createItem(455, 250, 'orange');
 }
 
-function addItemBox() {
-  items = game.add.physicsGroup();
-  createItem(20, 467, 'coin1');
-}
 
-function addletters() {
-  items = game.add.physicsGroup();
-  createItem(464, 520, 'blue');
-  createItem(534, 520, 'violet');
-  createItem(604, 520, 'green');
-  createItem(760, 350, 'red');
-  createItem(550, 50, 'yellow');
-  createItem(600, 50, 'orange');
-  createItem(240, 50, 'orange');
-  createItem(290, 50, 'yellow');
-}
+
+
 
 // add platforms to the game
 function addPlatforms() {
