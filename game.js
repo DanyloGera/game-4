@@ -47,16 +47,16 @@ function addletters() {
 function addPlatforms() {
   platforms = game.add.physicsGroup();
 
-  platforms.create(0, 565, 'platform1');
-  platforms.create(538, 103, 'platform2');
-  platforms.create(220, 103, 'platform2');
+  createPlatforms(0, 565, 'platform1');
+  createPlatforms(538, 103, 'platform2');
+  createPlatforms(220, 103, 'platform2');
   //
-  platforms.create(747, 510, 'box');
-  platforms.create(747, 455, 'box');
-  platforms.create(747, 400, 'box');
-  platforms.create(692, 510, 'box');
-  platforms.create(455, 309, 'box2');
-  platforms.create(357, 215, 'box3');
+  createPlatforms(747, 510, 'box');
+  createPlatforms(747, 455, 'box');
+  createPlatforms(747, 400, 'box');
+  createPlatforms(692, 510, 'box');
+  createPlatforms(455, 309, 'box2');
+  createPlatforms(357, 215, 'box3');
 
   platforms.setAll('body.immovable', true);
 }
@@ -68,8 +68,8 @@ function createItem(left, top, image) {
   item.animations.add('spin');
   item.animations.play('spin', 10, true);
 }
-function createPlatforms(left, top, image) {
-  var platform = platforms.create(left, top, image);
+function createPlatforms(x,y,plat) {
+  var platform = platforms.create(x,y,plat);
 }
 
 // create the winning badge and add to screen
