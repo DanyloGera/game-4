@@ -81,9 +81,6 @@ function itemHandler(player, item) {
   item.kill();
    if (item.key === 'letter') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'coin4') {
-     currentScore = currentScore - 45;
-     game.add.sprite(385, 250, 'meatbasket');
   }else if (item.key === 'coin1') {
     game.add.sprite(20, 467, 'openbox');
     addletters();
@@ -132,13 +129,7 @@ window.onload = function () {
 
 
 
-    game.load.spritesheet('fruitbasket', 'fruitbasket.png', { frameWidth: 40, frameHeight: 40 });
-    game.load.spritesheet('meatbasket', 'meatbasket.png', { frameWidth: 40, frameHeight: 40 });
-    game.load.spritesheet('giftbasket', 'giftbasket.png', { frameWidth: 40, frameHeight: 40 });
-    game.load.spritesheet('butterbasket', 'butterbasket.png', { frameWidth: 40, frameHeight: 40 });
-    // game.load.spritesheet('birth', 'booklets/birth.png', 36, 44);
-    // game.load.spritesheet('2021', 'booklets/2021.png', 36, 44);
-    // game.load.spritesheet('news', 'booklets/news.png', 36, 44);
+
 
 
 
