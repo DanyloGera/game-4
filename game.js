@@ -81,12 +81,7 @@ function createBadge() {
 // when the player collects an item on the screen
 function itemHandler(player, item) {
   item.kill();
-   if (item.key === 'coin1') {
-     game.add.sprite(20, 467, 'openbox');
-
-  }else if (item.key === 'letter') {
-     currentScore = currentScore + 10;
-  }else if (item.key === 'blue') {
+ if (item.key === 'blue') {
      currentScore = currentScore + 10;
   }else if (item.key === 'orange') {
      currentScore = currentScore + 10;
