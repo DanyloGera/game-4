@@ -96,7 +96,7 @@ function itemHandler(player, item) {
 // when the player collects the badge at the end of the game
 function badgeHandler(player, badge) {
   badge.kill();
-  platforms.kill();
+  platform.kill();
   addletters();
 }
 
