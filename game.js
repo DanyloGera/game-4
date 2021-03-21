@@ -86,7 +86,7 @@ function itemHandler(player, item) {
 
   }else if (item.key === 'letter') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'blue') {
+  }else if (item.key === 'blue, orange, yellow, green, violet') {
      currentScore = currentScore + 10;
   }
   if (currentScore === winningScore) {
