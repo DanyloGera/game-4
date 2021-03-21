@@ -46,15 +46,16 @@ function addletters() {
 // add platforms to the game
 function addPlatforms() {
   platforms = game.add.physicsGroup();
-  var platform = platforms;
+
   platforms.create(0, 565, 'platform1');
   platforms.create(538, 103, 'platform2');
   platforms.create(220, 103, 'platform2');
   //
-  platforms.create(747, 510, 'box');
-  platforms.create(747, 455, 'box');
-  platforms.create(747, 400, 'box');
-  platforms.create(692, 510, 'box');
+  var platform = platforms.create(747, 510, 'box');
+  var platform = platforms.create(747, 455, 'box');
+  var platform = platforms.create(747, 400, 'box');
+  var platform = platforms.create(692, 510, 'box');
+
   platforms.create(455, 309, 'box2');
   platforms.create(357, 215, 'box3');
 
