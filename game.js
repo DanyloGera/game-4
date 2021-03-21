@@ -56,15 +56,17 @@ function addPlatforms() {
   platforms.create(747, 455, 'box');
   platforms.create(747, 400, 'box');
   platforms.create(692, 510, 'box');
-  platforms.create(455, 309, 'box2');
+  platforms.create(357, 309, 'box2');
   platforms.create(357, 215, 'box3');
 
   platforms.setAll('body.immovable', true);
 }
   function addExtraPlatforms() {
     platforms = game.add.physicsGroup();
+    //extra
       platforms.create(601, 268, 'box4');
       platforms.create(311, 270, 'box4');
+    //last
       platforms.create(0, 565, 'platform1');
       platforms.create(538, 103, 'platform2');
       platforms.create(220, 103, 'platform2');
