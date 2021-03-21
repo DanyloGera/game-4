@@ -88,6 +88,14 @@ function itemHandler(player, item) {
      currentScore = currentScore + 10;
   }else if (item.key === 'blue, orange, yellow, green, violet') {
      currentScore = currentScore + 10;
+  }else if (item.key === 'orange') {
+     currentScore = currentScore + 10;
+  }else if (item.key === ' yello') {
+     currentScore = currentScore + 10;
+  }else if (item.key === 'green') {
+     currentScore = currentScore + 10;
+  }else if (item.key === 'violet') {
+     currentScore = currentScore + 10;
   }
   if (currentScore === winningScore) {
       createBadge();
