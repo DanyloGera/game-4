@@ -156,7 +156,7 @@ window.onload = function () {
 
   // initial game set up
   function create() {
-    var block = this.physics.add.image(100, 500, 'box2')
+    var block = this.add.image(100, 500, 'box2')
    .setImmovable(true)
    .setVelocity(100, -100);
  block.body.setAllowGravity(false);
