@@ -84,13 +84,13 @@ function itemHandler(player, item) {
   }else if (item.key === 'coin4') {
      currentScore = currentScore - 45;
      game.add.sprite(385, 250, 'meatbasket');
-  }
-  if (currentScore === winningScore) {
-      addItemBox();
   }else if (item.key === 'coin1') {
     game.add.sprite(20, 467, 'openbox');
     addletters();
  }
+  if (currentScore === winningScore) {
+      addItemBox();
+  }
 }
 
 // when the player collects the badge at the end of the game
