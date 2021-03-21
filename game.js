@@ -20,10 +20,10 @@ function addItems() {
   createItem(534, 520, 'violet');
   createItem(604, 520, 'green');
   createItem(760, 350, 'yellow');
-  createItem(550, 50, 'letter');
-  createItem(600, 50, 'letter');
-  createItem(240, 50, 'letter');
-  createItem(290, 50, 'letter');
+  createItem(550, 50, 'blue');
+  createItem(600, 50, 'violet');
+  createItem(240, 50, 'yellow');
+  createItem(290, 50, 'orange');
   createItem(455, 250, 'orange');
 }
 
