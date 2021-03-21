@@ -62,9 +62,10 @@ function addPlatforms() {
   platforms.setAll('body.immovable', true);
 }
   function addExtraPlatforms() {
+    addPlatforms();
     platforms = game.add.physicsGroup();
       platforms.create(601, 268, 'box4');
-    
+    platforms.setAll('body.immovable', true);
   }
 
 // create a single animated item and add to screen
