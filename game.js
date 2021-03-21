@@ -96,7 +96,7 @@ function itemHandler(player, item) {
 // when the player collects the badge at the end of the game
 function badgeHandler(player, badge) {
   badge.kill();
-  addletters();
+  this.location.href="https://danylogera.github.io/game-3/";
 }
 
 // setup game when the web page loads
