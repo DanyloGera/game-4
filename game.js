@@ -159,16 +159,7 @@ window.onload = function () {
     // alert("Прочитайте завдання, закрийте його на хрестик і грайте!");
     timer1();
     this.add.image(0, 0, 'background');
-    // game.add.sprite(266, 467, 'grandma');
-    // game.add.sprite(470, 467, 'grandpa');
-    //
-    // game.add.sprite(167, 214, 'grandma2');
-    // game.add.sprite(370, 215, 'grandpa2');
 
-    // game.add.sprite(275, 510, 'fruitbasket');
-    // game.add.sprite(480, 510, 'butterbasket');
-    // game.add.sprite(180, 250, 'giftbasket');
-    // game.add.sprite(385, 250, 'meatbasket');
     player = game.add.sprite(200, 457, 'player');
     player.animations.add('walk');
     player.anchor.setTo(0.5, 1);
