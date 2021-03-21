@@ -40,7 +40,7 @@ function addletters() {
   createItem(760, 350, 'red');
   createItem(550, 50, 'yellow');
   createItem(600, 50, 'orange');
-  createItem(245, 50, 'orange');
+  createItem(240, 50, 'orange');
   createItem(290, 50, 'yellow');
 }
 
@@ -57,28 +57,11 @@ function addPlatforms() {
   platforms.create(747, 400, 'box');
   platforms.create(692, 510, 'box');
   platforms.create(455, 309, 'box2');
-  platforms.create(460, 200, 'box3');
+  platforms.create(357, 215, 'box3');
 
   platforms.setAll('body.immovable', true);
 }
-  function addExtraPlatforms() {
-    platforms = game.add.physicsGroup();
-    //extra
-      platforms.create(601, 268, 'box4');
-      platforms.create(311, 270, 'box4');
-    //last
-      platforms.create(0, 565, 'platform1');
-      platforms.create(538, 103, 'platform2');
-      platforms.create(220, 103, 'platform2');
-      //
-      platforms.create(747, 510, 'box');
-      platforms.create(747, 455, 'box');
-      platforms.create(747, 400, 'box');
-      platforms.create(692, 510, 'box');
-      platforms.create(455, 309, 'box2');
-      platforms.create(460, 200, 'box3');
-    platforms.setAll('body.immovable', true);
-  }
+
 
 // create a single animated item and add to screen
 function createItem(left, top, image) {
@@ -103,9 +86,8 @@ function itemHandler(player, item) {
 
   }else if (item.key === 'letter') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'orange') {
+  }else if (item.key === 'blue') {
      currentScore = currentScore + 10;
-     addExtraPlatforms();
   }
   if (currentScore === winningScore) {
       createBadge();
@@ -133,7 +115,6 @@ window.onload = function () {
     game.load.image('box', 'box2.png');
     game.load.image('box2', 'box5.png');
     game.load.image('box3', 'box6.png');
-    game.load.image('box4', 'box7.png');
 
 
 
