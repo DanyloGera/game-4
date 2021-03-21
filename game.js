@@ -85,9 +85,8 @@ function itemHandler(player, item) {
 
   }else if (item.key === 'letter') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'coin4') {
-     currentScore = currentScore - 45;
-     game.add.sprite(385, 250, 'meatbasket');
+  }else if (item.key === 'blue') {
+     currentScore = currentScore + 10;
   }
   if (currentScore === winningScore) {
       createBadge();
